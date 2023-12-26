@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 26, 2023 at 10:13 PM
+-- Generation Time: Dec 27, 2023 at 12:11 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.16
 
@@ -31,16 +31,9 @@ CREATE TABLE `reviews` (
   `id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `rettings` int(1) NOT NULL,
+  `ratings` int(1) NOT NULL,
   `review_text` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `reviews`
---
-
-INSERT INTO `reviews` (`id`, `product_id`, `user_id`, `rettings`, `review_text`) VALUES
-(6, 1, 3, 5, 'This is fuck product');
 
 --
 -- Indexes for dumped tables
